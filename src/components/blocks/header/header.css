@@ -1,0 +1,49 @@
+.header {
+  height: 150px;
+  top: 0;
+  z-index: 1;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  background: var(--background-dark);
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title h1{
+  font-size: 31px;
+  font-weight: 700px;
+  text-transform: uppercase;
+}
+
+.header__busket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.busket__price {
+  width: 151px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.busket__price p {
+  text-align: end;
+}
+
+.busket {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

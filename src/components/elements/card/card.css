@@ -1,0 +1,96 @@
+.card__div {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.card__main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__card {
+  border: 1px solid var(--main-color);
+  padding: 43px 21px 32px 21px;
+  width: 312px;
+  height: 552px;
+  margin: 10px 0;
+}
+
+.product__title {
+  font-weight: 500;
+  margin-top: 31px;
+  color: var(--color-text);
+}
+
+.product__description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 13px;
+  color: var(--color-text);
+}
+
+.price__div {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.slash, .time {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 58px;
+}
+
+.btn__plus {
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__plus:hover {
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .product__description {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .price {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .slash {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .time {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
+
+.product__card:hover .product__title {
+  color: var(--main-color);
+  transition: all .12s linear;
+}
