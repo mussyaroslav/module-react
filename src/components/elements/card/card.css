@@ -1,6 +1,6 @@
 .card__div {
-  margin-top: 10px;
-  margin-bottom: 40px;
+  height: calc(100vh - 150px);
+  overflow-x: auto;
 }
 
 .card__main {
@@ -19,9 +19,14 @@
 }
 
 .product__title {
-  font-weight: 500;
   margin-top: 31px;
+  height: 40px;
+}
+
+.product__title a {
   color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .product__description {
@@ -29,6 +34,7 @@
   font-weight: 400;
   margin-top: 13px;
   color: var(--color-text);
+  height: 72px;
 }
 
 .price__div {
@@ -50,7 +56,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 58px;
+  margin-top: 15px;
 }
 
 .btn__plus {
@@ -61,6 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
 }
 
 .btn__plus:hover {
@@ -90,7 +97,7 @@
   transition: all .12s linear;
 }
 
-.product__card:hover .product__title {
+.product__card:hover .product__title a {
   color: var(--main-color);
   transition: all .12s linear;
 }
