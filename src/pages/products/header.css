@@ -42,3 +42,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.link__to__basket {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.link__to__basket:hover {
+  text-decoration: underline;
+  transition: .12s all linear;
+}

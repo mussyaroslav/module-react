@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8101642-cbf8-4e8c-93b0-96128a123c02" name="Changes" comment="React create">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_03_2023_18_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_03_2023_18_23__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blocks/header/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blocks/header/header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elements/card/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elements/card/card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elements/cardBasket/cardBasket.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elements/cardBasket/cardBasket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elements/cardBasket/cardBasket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elements/cardBasket/cardBasket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/basket/basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/basket/basket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/products.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +87,7 @@
       <workItem from="1678705794119" duration="345000" />
       <workItem from="1678708950791" duration="123000" />
       <workItem from="1678709107915" duration="355000" />
+      <workItem from="1678975582710" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="React create">
       <created>1678627466652</created>
