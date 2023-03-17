@@ -1,11 +1,17 @@
 import './basket.css'
 
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 import CardBasket from '../../components/elements/cardBasket/cardBasket';
 import Button from '../../components/ui/button/button';
 
 function Basket() {
+
+  const productsBasket = useSelector(state => state.products.basketProducts)
+  const productsPrice = useSelector(state => state.products.allPriceProductsBasket)
+
+
   return (
     <div className="main">
       <header className='header__basket'>
@@ -30,9 +36,17 @@ function Basket() {
       <div className='basket__main'>
         <div className='container__basket'>
           <div className='basket__div'>
-            <CardBasket image='/images/5.png' title='Устрицы по рокфеллеровски' price='2700' />
-            <CardBasket image='/images/6.png' title='Креветки по-королевски в лимонном соке' price='1820' />
-            <CardBasket image='/images/7.png' title='Свиные ребрышки на гриле с зеленью' price='1600' />
+            {productsBasket.map(item => {
+              return (
+                <CardBasket
+                  key={item.idx}
+                  id={item.idx}
+                  image={item.image}
+                  title={item.title}
+                  price={item.price}
+                />
+              )
+            })}
           </div>
         </div>
       </div>
@@ -41,7 +55,7 @@ function Basket() {
           <div className='footer__basket__div'>
             <div className='footer__price__div'>
               <h2>Заказ на сумму:</h2>
-              <p>6220 ₽</p>
+              <p>{productsPrice} ₽</p>
             </div>
             <Button className='footer__btn' name='Оформить заказ'/>
           </div>

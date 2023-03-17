@@ -1,18 +1,18 @@
 import './products.css';
 import './header.css';
+import '../../variables.css';
+import '../../reset.css';
 import { Link } from "react-router-dom";
-import { PRODUCTS } from '../../products';
+// import { products } from '../../products';
+import { useSelector } from 'react-redux';
 import Card from '../../components/elements/card/card';
-import { useState } from 'react';
 
 function Products() {
-  const [basketPrice, setBasketPrice] = useState(0);
-  const [basketQuantity, setBasketQuantity] = useState(0);
+  
+  const products = useSelector(state => state.products.products)
+  const count = useSelector(state => state.products.countProducts)
+  const price = useSelector(state => state.products.allPriceProductsBasket)
 
-  const handleAddToBasket = (price) => {
-    setBasketPrice(prevPrice => prevPrice + price);
-    setBasketQuantity(prevQuantity => prevQuantity + 1);
-  };
   return (
     <div className='main'>
       <header className='header'>
@@ -24,7 +24,7 @@ function Products() {
             <Link className='link__to__basket' to={'/basket'}>
               <div className="header__busket">
                 <div className="busket__price">
-                  <p>{basketQuantity} шт. <br /> на сумму {basketPrice} ₽</p>
+                  <p> {count} шт. <br /> на сумму {price} ₽</p>
                 </div>
                 <div className="busket">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
@@ -39,16 +39,16 @@ function Products() {
       <div className='card__div'>
         <div className='container'>
           <div className='card__main'>
-            {PRODUCTS.map(item => {
+            {products.map(item => {
               return (
                 <Card 
                   key={item.id}
+                  id={item.id}
                   image={item.image}
                   title={item.title}
                   description={item.description}
                   price={item.price}
                   quantity={item.quantity}
-                  handleAddToBasket={handleAddToBasket}
                 />
               )
             })}
