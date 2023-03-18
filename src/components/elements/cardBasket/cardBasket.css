@@ -58,3 +58,8 @@
   transition: .12s all linear;
   fill: var(--color-text);
 }
+
+.basket__main {
+  height: calc(100vh - 215px);
+  overflow-y: auto;
+}
