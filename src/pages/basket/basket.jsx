@@ -1,38 +1,16 @@
-import './basket.css'
-
-import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 
 import CardBasket from '../../components/elements/cardBasket/cardBasket';
-import Button from '../../components/ui/button/button';
+import HeaderBasket from '../../components/elements/blocks/header-basket/header-basket';
+import FooterBasket from '../../components/elements/blocks/footer-basket/footer-basket';
 
 function Basket() {
 
   const productsBasket = useSelector(state => state.products.basketProducts)
-  const productsPrice = useSelector(state => state.products.allPriceProductsBasket)
-
 
   return (
     <div className="main">
-      <header className='header__basket'>
-        <div className='container__basket'>
-          <div className='header__basket__main'>
-            <Link to={'/'} className='btn__busket__back'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                <g clipPath="url(#clip0_7057_4)">
-                <path d="M3.65166 2.04683C3.787 1.91149 4.00007 1.91149 4.13541 2.04683C4.26618 2.1776 4.26618 2.39524 4.13541 2.5257L1.68253 4.97859H9.77672C9.9654 4.97859 10.1202 5.12856 10.1202 5.31725C10.1202 5.50593 9.9654 5.66078 9.77672 5.66078H1.68253L4.13541 8.10909C4.26618 8.24443 4.26618 8.46238 4.13541 8.59284C4.00007 8.72818 3.787 8.72818 3.65166 8.59284L0.618095 5.55927C0.487328 5.42851 0.487328 5.21086 0.618095 5.0804L3.65166 2.04683Z" fill="#D58C51"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_7057_4">
-                <rect width="9.6" height="9.6" fill="white" transform="translate(0.52002 0.520004)"/>
-                </clipPath>
-                </defs>
-              </svg>  
-            </Link>
-            <h1>Корзина с выбранными товарами</h1>
-          </div>
-        </div>
-      </header>
+      <HeaderBasket />
       <div className='basket__main'>
         <div className='container__basket'>
           <div className='basket__div'>
@@ -50,17 +28,7 @@ function Basket() {
           </div>
         </div>
       </div>
-      <footer className='footer__basket'>
-        <div className='container__basket'>
-          <div className='footer__basket__div'>
-            <div className='footer__price__div'>
-              <h2>Заказ на сумму:</h2>
-              <p>{productsPrice} ₽</p>
-            </div>
-            <Button className='footer__btn' name='Оформить заказ'/>
-          </div>
-        </div>
-      </footer>
+      <FooterBasket />
     </div>
   )
 }
